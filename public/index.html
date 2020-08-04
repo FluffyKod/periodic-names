@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js" integrity="sha512-VXhyn2yTlj6eL4eipgFzMYQVOR+6R4sNi0r7spOGrzlhnWSX3V6NJfROAFWygj43k28MiOblwFYK44KLPpmIDA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+
+    <title>Periodic Table Names</title>
+</head>
+
+<body>
+
+    <div id="overlay" class="hidden"></div>
+    <div id="name-container"></div>
+
+    <input id="word-input" type="text" placeholder="Enter word or name...">
+
+    <div id="result-container">
+        <p id="left-arrow"><i class="fas fa-2x fa-angle-left"></i></p>
+        <p id="result"></p>
+        <p id="right-arrow"><i class="fas fa-2x fa-angle-right"></i></p>
+    </div>
+
+    <div id="search-box" class="control-box">
+        <i class="fas fa-2x fa-book"></i>
+    </div>
+
+    <div id="search-pane" class="hidden">
+        <div id="hide-search" class="control-box">
+            <i class="fas fa-2x fa-times"></i>
+        </div>
+
+        <h4>Search</h4>
+        <input id="search-input" type="text" placeholder="Search and press enter...">
+
+        <h4>Results (scroll right to see all)</h4>
+        <div id="search-results"></div>
+    </div>
+
+
+    <div class="legend">
+        <div class="preview-container">
+            <div class="preview-block alkali-metal"></div>
+            <p>Alkali Metal</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block alkaline-earth-metal"></div>
+            <p>Alkaline Earth Metal</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block transition-metal"></div>
+            <p>Transition Metal</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block metal"></div>
+            <p>Metal</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block nonmetal"></div>
+            <p>Nonmetal</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block metalloid"></div>
+            <p>Metalloid</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block lanthanoid"></div>
+            <p>Lanthanoid</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block actinoid"></div>
+            <p>Actinoid</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block halogen"></div>
+            <p>Halogen</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block noble-gas"></div>
+            <p>Noble Gas</p>
+        </div>
+
+        <div class="preview-container">
+            <div class="preview-block unknown"></div>
+            <p>Unknown</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.2/gsap.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
